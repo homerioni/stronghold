@@ -142,6 +142,61 @@ input[type=number] {
     width: 100%;
   }
 }
+.button {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.8rem 3.6rem;
+  border-radius: 1.5rem;
+  background-color: #ce2500;
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+.button:hover {
+  background-color: #ab1d00;
+}
+
+.red-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ce2500;
+}
+.red-link > svg {
+  width: 0.6rem;
+  height: 1.1rem;
+  margin-left: 0.8rem;
+}
+.red-link > svg path {
+  fill: #ce2500;
+}
+
+@media (max-width: 48em) {
+  .button {
+    padding: 1.8rem 3.4rem;
+    border-radius: 1.5rem;
+    font-size: 3.2rem;
+  }
+
+  .red-link {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  .red-link > svg {
+    width: 0.8rem;
+    height: 1.6rem;
+    margin-left: 2.4rem;
+  }
+}
 .header {
   padding: 1.2rem 0;
   background-color: rgb(16, 16, 16);
