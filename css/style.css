@@ -941,7 +941,7 @@ body {
     position: static;
     width: 75rem;
     height: 75rem;
-    margin: -20rem -5rem 6rem -5rem;
+    margin: -20rem -7rem 6rem -7rem;
   }
   .technical__bg:before {
     content: none;
@@ -985,6 +985,205 @@ body {
   .technical__item-text {
     font-size: 2.8rem;
     letter-spacing: 0.035em;
+  }
+}
+.start {
+  margin-bottom: 22rem;
+}
+.start__info-block {
+  margin-bottom: 6rem;
+}
+.start__info-block .info__img-box {
+  width: 63rem;
+  height: 78.8rem;
+  margin-right: 8rem;
+}
+.start__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.start__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 38.7rem;
+  padding: 4rem;
+  border-radius: 1.9rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(12, 11, 11, 0.95)), to(rgba(12, 11, 11, 0.95))), rgba(255, 255, 255, 0.9);
+  background: linear-gradient(0deg, rgba(12, 11, 11, 0.95), rgba(12, 11, 11, 0.95)), rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+}
+.start__item:nth-child(3n+1) {
+  margin-right: 4.4rem;
+}
+.start__item:nth-child(3n) {
+  margin-left: auto;
+}
+.start__item:nth-child(n+4) {
+  margin-top: 4.5rem;
+}
+.start__item.optimal .start__optimal {
+  display: block;
+}
+.start__item.optimal:before {
+  content: "";
+  position: absolute;
+  right: -3.9rem;
+  top: -5.5rem;
+  display: block;
+  width: 18.6rem;
+  height: 13rem;
+  border-radius: 100%;
+  -webkit-transform: matrix(0.95, -0.33, 0.32, 0.94, 0, 0);
+          transform: matrix(0.95, -0.33, 0.32, 0.94, 0, 0);
+  background-color: #FFB300;
+}
+.start__item.optimal:after {
+  content: "";
+  position: absolute;
+  right: -4.4rem;
+  top: -5.9rem;
+  display: block;
+  width: 19.5rem;
+  height: 13.7rem;
+  border-radius: 100%;
+  border: 1px solid #FFB300;
+  -webkit-transform: matrix(0.95, -0.33, 0.32, 0.94, 0, 0);
+          transform: matrix(0.95, -0.33, 0.32, 0.94, 0, 0);
+}
+.start__optimal {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 10rem;
+  font-family: "Proxima Nova Lt";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #000;
+}
+.start__item-sub-title {
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  color: rgba(235, 44, 0, 0.8);
+}
+.start__item-title {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+.start__text {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+.start__list {
+  margin-bottom: 4rem;
+}
+.start__list-item {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+  font-size: 1.5rem;
+}
+.start__list-item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.start__price {
+  font-weight: bold;
+  font-size: 4.6rem;
+}
+.start__price--min {
+  font-size: 2.2rem;
+}
+
+@media (max-width: 48em) {
+  .start {
+    margin-bottom: 20rem;
+  }
+  .start__info-block {
+    margin-bottom: 5rem;
+  }
+  .start__info-block .info__img-box {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    height: 70rem;
+    margin-right: 0;
+    margin-bottom: 7rem;
+  }
+  .start__info-block .info__text-block {
+    margin-bottom: 0;
+  }
+  .start__item {
+    width: 100%;
+    border-radius: 2.6rem;
+  }
+  .start__item:nth-child(3n+1) {
+    margin-right: 0;
+  }
+  .start__item:nth-child(3n) {
+    margin-left: auto;
+  }
+  .start__item:nth-child(n+2) {
+    margin-top: 2.5rem;
+  }
+  .start__item.optimal:before {
+    right: -5.5rem;
+    top: -9.2rem;
+    width: 28.4rem;
+    height: 20rem;
+  }
+  .start__item.optimal:after {
+    right: -6.2rem;
+    top: -9.6rem;
+    width: 29.6rem;
+    height: 20.8rem;
+  }
+  .start__optimal {
+    right: 3rem;
+    top: 2rem;
+    width: 16rem;
+    font-size: 2.4rem;
+  }
+  .start__item-sub-title {
+    font-size: 2.4rem;
+  }
+  .start__item-title {
+    margin-bottom: 2.4rem;
+    font-size: 3.2rem;
+  }
+  .start__text {
+    margin-bottom: 5rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.035em;
+  }
+  .start__list {
+    margin-bottom: 8rem;
+  }
+  .start__list-item {
+    margin-left: 2.6rem;
+    font-size: 2.4rem;
+  }
+  .start__price {
+    font-size: 4.8rem;
+  }
+  .start__price--min {
+    font-size: 3.2rem;
   }
 }
 body.lock {
