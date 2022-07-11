@@ -17,7 +17,6 @@
     > img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
     }
   }
 
@@ -26,6 +25,7 @@
 
   &__sub-title {
     margin-bottom: 1.5rem;
+    font-family: $def1-8;
     font-weight: 250;
     font-size: 1.8rem;
     letter-spacing: 0.02em;
@@ -39,6 +39,7 @@
     white-space: nowrap;
 
     &--min {
+      font-family: $def3-6;
       font-weight: 600;
       font-size: 2.6rem;
     }
