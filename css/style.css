@@ -1813,6 +1813,149 @@ body {
     font-size: 2.8rem;
   }
 }
+.consulting {
+  margin-bottom: 22rem;
+}
+.consulting__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.consulting__info-block {
+  width: 48.4rem;
+}
+.consulting__sub-title {
+  font-family: "Proxima Nova Th";
+  font-weight: 250;
+  font-size: 1.8rem;
+  letter-spacing: 0.02em;
+}
+.consulting__title {
+  margin-bottom: 3rem;
+  font-weight: bold;
+  font-size: 5.6rem;
+  letter-spacing: 0.01em;
+}
+.consulting__text-box:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.consulting__text-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1rem;
+  font-family: "Proxima Nova Lt";
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.consulting__text-title--number {
+  font-weight: normal;
+  min-width: 5.5rem;
+  font-size: 5rem;
+  line-height: 4.4rem;
+}
+.consulting__text-title > span {
+  display: block;
+}
+.consulting__text {
+  font-size: 1.6rem;
+  letter-spacing: 0.035em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.consulting__img-box {
+  position: relative;
+  width: 65rem;
+  height: 65rem;
+  margin: 5rem 5rem 5rem 0;
+}
+.consulting__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.consulting__img-box:before {
+  content: "";
+  position: absolute;
+  right: -5rem;
+  top: -5rem;
+  z-index: -1;
+  display: block;
+  width: 42.6rem;
+  height: 75rem;
+  background-color: #FFB300;
+}
+
+@media (max-width: 48em) {
+  .consulting {
+    margin-bottom: 20rem;
+  }
+  .consulting__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .consulting__info-block {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  .consulting__sub-title {
+    font-size: 2.6rem;
+  }
+  .consulting__title {
+    margin-bottom: 6rem;
+    font-size: 4.8rem;
+    letter-spacing: 0.04em;
+  }
+  .consulting__text-box:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .consulting__text-title {
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
+  }
+  .consulting__text-title--number {
+    min-width: 6.6rem;
+    font-size: 6rem;
+    line-height: 5.5rem;
+  }
+  .consulting__text {
+    font-size: 2.8rem;
+  }
+  .consulting__img-box {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    height: 73rem;
+    margin: 0 0 6rem 0;
+    padding: 4rem 4rem 4rem 0;
+  }
+  .consulting__img-box:before {
+    right: 0;
+    top: 0;
+    width: 42.2rem;
+    height: 100%;
+  }
+}
 body.lock {
   overflow: hidden;
 }
