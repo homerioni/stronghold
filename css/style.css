@@ -618,11 +618,13 @@ body {
   font-size: 5.6rem;
   letter-spacing: 0.04em;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 .info__title--min {
   font-family: "Proxima Nova Lt";
   font-weight: 600;
   font-size: 2.6rem;
+  text-transform: none;
 }
 .info__title > span {
   display: block;
@@ -1389,6 +1391,100 @@ body {
     margin-left: 3rem;
     line-height: 3.6rem;
     letter-spacing: 0.035em;
+  }
+}
+.indicators {
+  margin-bottom: 22rem;
+}
+.indicators__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.indicators__image-block {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.indicators__img-box:nth-child(1) {
+  width: 41.8rem;
+  height: 61.6rem;
+}
+.indicators__img-box:nth-child(2) {
+  width: 75.8rem;
+  height: 75.8rem;
+  margin-top: -14.2rem;
+}
+.indicators__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.indicators__text-block {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 48em) {
+  .indicators {
+    margin-bottom: 20rem;
+  }
+  .indicators .info__title {
+    text-align: center;
+  }
+  .indicators__image-block {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    margin-bottom: 8rem;
+  }
+  .indicators__img-box:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 37.4rem;
+    height: 55rem;
+    margin: 0 auto;
+  }
+  .indicators__img-box:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 50rem;
+    height: 50rem;
+    margin: 0 auto 6rem auto;
+  }
+  .indicators__img-box > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .indicators__text-block {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 5rem;
   }
 }
 body.lock {

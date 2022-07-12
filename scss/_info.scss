@@ -53,11 +53,13 @@
     font-size: 5.6rem;
     letter-spacing: 0.04em;
     white-space: nowrap;
+    text-transform: uppercase;
 
     &--min {
       font-family: $def3-6;
       font-weight: 600;
       font-size: 2.6rem;
+      text-transform: none;
     }
 
     > span {
