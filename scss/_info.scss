@@ -18,6 +18,24 @@
     }
   }
 
+  &--seo {
+    .info__img-box {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40rem;
+        height: 8rem;
+        transform: translate(-10%, 50%);
+        background-color: #000;
+        filter: blur(2rem);
+      }
+    }
+  }
+
   &__content {
     display: flex;
     align-items: center;
@@ -104,6 +122,18 @@
       }
     }
 
+    &--seo {
+      .info__img-box {
+        &:before {
+          transform: translate(-10%, 60%);
+        }
+      }
+
+      .info__title {
+        font-size: 4.8rem;
+      }
+    }
+
     &__content {
       flex-direction: column;
     }
@@ -127,6 +157,7 @@
     &__title {
       margin-bottom: 4rem;
       font-size: 6.8rem;
+      white-space: normal;
 
       &--min {
         font-size: 3.2rem;
