@@ -2290,6 +2290,60 @@ body {
     font-size: 6rem;
   }
 }
+.blog-intro {
+  margin: 22rem 0;
+}
+.blog-intro__logo {
+  display: block;
+  width: 50rem;
+  height: 15rem;
+  margin: 0 auto 1rem auto;
+}
+.blog-intro__logo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.blog-intro__sub-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 1rem auto;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.115em;
+}
+.blog-intro__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 4.5rem auto;
+  font-weight: bold;
+  font-size: 5.6rem;
+  letter-spacing: 0.01em;
+}
+.blog-intro__btn {
+  margin: 0 auto;
+}
+
+@media (max-width: 48em) {
+  .blog-intro {
+    margin: 10rem 0 20rem 0;
+  }
+  .blog-intro__logo {
+    width: 47rem;
+    height: 14rem;
+    margin-bottom: 2.6rem;
+  }
+  .blog-intro__sub-title {
+    font-size: 2.4rem;
+  }
+  .blog-intro__title {
+    margin-bottom: 6rem;
+    font-size: 6rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }
