@@ -151,6 +151,19 @@
       }
     }
 
+    &--img-mob-full {
+      .info__img-box {
+        order: 0;
+        width: calc(100% + 6rem);
+        height: 75rem;
+        margin: 0 -3rem 10rem -3rem;
+      }
+
+      .info__text-block {
+        margin-bottom: 0;
+      }
+    }
+
     &__content {
       flex-direction: column;
     }
