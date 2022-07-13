@@ -2428,6 +2428,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   border-radius: 2.2rem;
   border: 3px solid #FFFFFF;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(12, 11, 11, 0.95)), to(rgba(12, 11, 11, 0.95))), rgba(255, 255, 255, 0.9);
