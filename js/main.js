@@ -8,4 +8,10 @@ $(document).ready(function () {
             .parent().find('.qa__answer').slideToggle();
     });
 
+    // Blog
+    $('.blog__category-btn').click(function () {
+        $('.blog__category-btn').removeClass('active');
+        $(this).addClass('active');
+    });
+
 });
