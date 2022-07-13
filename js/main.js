@@ -2,6 +2,10 @@
 
 $(document).ready(function () {
 
+    // mask
+    $('.input-phone').mask('+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9');
+
+
     // Q&A
     $('.qa__question').click(function () {
         $(this).toggleClass('open')
@@ -12,6 +16,20 @@ $(document).ready(function () {
     $('.blog__category-btn').click(function () {
         $('.blog__category-btn').removeClass('active');
         $(this).addClass('active');
+    });
+
+    // modal-contacts
+    $('.modal-contacts').css('display', 'flex').hide();
+    $('.modal-contacts__content').css('display', 'flex').hide();
+    $('.contacts-btn').click(function () {
+        $('body').addClass('lock');
+        $('.modal-contacts').fadeIn();
+        $('.modal-contacts__content').slideDown(300);
+    });
+    $('.modal-contacts__bg').click(function () {
+        $('body').removeClass('lock');
+        $('.modal-contacts').hide();
+        $('.modal-contacts__content').hide();
     });
 
 });
