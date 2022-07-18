@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     // mask
-    $('.input-phone').mask('+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9');
+    $('.input-phone').mask('+7 (999) 999-99-99');
 
 
     // Q&A

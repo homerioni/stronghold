@@ -2766,7 +2766,7 @@ body {
 .modal-contacts__input {
   width: 20rem;
   font-size: 1.6rem;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.2em;
 }
 .modal-contacts__btn {
   -webkit-box-flex: 0;
