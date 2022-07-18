@@ -31,9 +31,13 @@ $(document).ready(function () {
     $('.contacts-btn').click(function () {
         $('body').addClass('lock');
         $('.modal-contacts').fadeIn();
-        $('.modal-contacts__content').slideDown(300);
+        $('.modal-contacts__content.form').slideDown(300);
     });
-    $('.modal-contacts__bg').click(function () {
+    $('.modal-contacts .send').click(function () {
+        $('.modal-contacts__content.form').hide();
+        $('.modal-contacts__content.complete').show();
+    });
+    $('.modal-contacts .close').click(function () {
         $('body').removeClass('lock');
         $('.modal-contacts').hide();
         $('.modal-contacts__content').hide();
