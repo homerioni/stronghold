@@ -718,9 +718,19 @@ body {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: calc(100% + 6rem);
     height: 75rem;
     margin: 0 -3rem 10rem -3rem;
+    overflow: hidden;
+  }
+  .info--img-mob-full .info__img-box > img {
+    width: 120%;
   }
   .info--img-mob-full .info__text-block {
     margin-bottom: 0;
@@ -732,6 +742,7 @@ body {
             flex-direction: column;
   }
   .info__img-box {
+    position: relative;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -761,7 +772,6 @@ body {
     width: 100%;
     margin-bottom: 6rem;
     font-size: 2.8rem;
-    text-align: center;
   }
   .info__btn {
     margin: 0 auto;
@@ -1104,8 +1114,8 @@ body {
   width: 38.7rem;
   padding: 4rem;
   border-radius: 1.9rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(12, 11, 11, 0.95)), to(rgba(12, 11, 11, 0.95))), rgba(255, 255, 255, 0.9);
-  background: linear-gradient(0deg, rgba(12, 11, 11, 0.95), rgba(12, 11, 11, 0.95)), rgba(255, 255, 255, 0.9);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(12, 11, 11, 0.9)), to(rgba(12, 11, 11, 0.9))), #FFFFFF;
+  background: linear-gradient(0deg, rgba(12, 11, 11, 0.9), rgba(12, 11, 11, 0.9)), #FFFFFF;
   overflow: hidden;
 }
 .start__item:nth-child(3n+1) {
@@ -3184,7 +3194,8 @@ body {
     margin-bottom: 0;
     margin-top: -14rem;
   }
-  .blog-page__start .info__title {
+  .blog-page__start .info__title,
+.blog-page__start .info__desc {
     text-align: center;
   }
   .blog-page__start .button {
