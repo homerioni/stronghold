@@ -116,7 +116,7 @@
 
 @media (max-width: 48em) {
   .technical {
-    margin-bottom: 20rem;
+    margin-bottom: 30rem;
 
     &__container {
       width: 100%;
@@ -131,9 +131,9 @@
 
     &__bg {
       position: static;
-      width: 75rem;
-      height: 75rem;
-      margin: -20rem -7rem 6rem -7rem;
+      width: 69rem;
+      height: auto;
+      margin: -10rem -4rem 9rem -4rem;
 
       &:before {
         content: none;

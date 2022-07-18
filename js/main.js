@@ -8,8 +8,15 @@ $(document).ready(function () {
 
     // Q&A
     $('.qa__question').click(function () {
-        $(this).toggleClass('open')
-            .parent().find('.qa__answer').slideToggle();
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open')
+                .parent().find('.qa__answer').slideUp();
+        } else {
+            $('.qa__question.open').removeClass('open')
+                .parent().find('.qa__answer').slideUp();
+            $(this).addClass('open')
+                .parent().find('.qa__answer').slideDown();
+        }
     });
 
     // Blog
