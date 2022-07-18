@@ -5,6 +5,8 @@ $(document).ready(function () {
     // mask
     $('.input-phone').mask('+7 (999) 999-99-99');
 
+    // modal
+    $('.modal').css('display', 'flex').hide();
 
     // Q&A
     $('.qa__question').click(function () {
@@ -26,7 +28,6 @@ $(document).ready(function () {
     });
 
     // modal-contacts
-    $('.modal-contacts').css('display', 'flex').hide();
     $('.modal-contacts__content').css('display', 'flex').hide();
     $('.contacts-btn').click(function () {
         $('body').addClass('lock');
@@ -41,6 +42,18 @@ $(document).ready(function () {
         $('body').removeClass('lock');
         $('.modal-contacts').hide();
         $('.modal-contacts__content').hide();
+    });
+
+    // modal-indicators
+    $('.indicators-btn').click(function () {
+        $('body').addClass('lock');
+        $('.modal-indicators').fadeIn();
+        $('.modal-indicators__content').slideDown(300);
+    });
+    $('.modal-indicators .close').click(function () {
+        $('body').removeClass('lock');
+        $('.modal-indicators').hide();
+        $('.modal-indicators__content').hide();
     });
 
 });

@@ -29,3 +29,25 @@ const rem = function (rem) {
         return (100/375) * (0.1 * $(window).width()) * rem;
     }
 }
+
+const modal_indicators_slider = new Swiper('.modal-indicators__slider', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 50,
+
+    navigation: {
+        nextEl: '.modal-indicators .next',
+        prevEl: '.modal-indicators .prev',
+    },
+
+    on: {
+        resize: function () {
+            $('.modal-indicators__name').text($('.swiper-slide-active .modal-indicators__slide-name').text());
+        },
+
+        slideChangeTransitionStart: function () {
+            $('.modal-indicators__name').text($('.swiper-slide-active .modal-indicators__slide-name').text());
+        },
+    },
+});

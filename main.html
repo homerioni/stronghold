@@ -478,6 +478,39 @@
                 <button type="button" class="info__btn button indicators-btn">Смотреть</button>
             </div>
         </div>
+        <div class="modal modal-indicators">
+            <div class="modal__bg close"></div>
+            <div class="modal__content modal-indicators__content">
+                <button type="button" class="modal__close close"></button>
+                <div class="modal-indicators__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="modal-indicators__slide swiper-slide">
+                            <div class="modal-indicators__img-box">
+                                <img src="img/modal-indicators-img.jpeg" alt="">
+                            </div>
+                            <div class="modal-indicators__slide-name">После накрутки</div>
+                        </div>
+                        <div class="modal-indicators__slide swiper-slide">
+                            <div class="modal-indicators__img-box">
+                                <img src="img/modal-indicators-img.jpeg" alt="">
+                            </div>
+                            <div class="modal-indicators__slide-name">До накрутки</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-indicators__navigation-block">
+                    <div class="modal-indicators__name"></div>
+                    <div class="modal-indicators__arrows">
+                        <svg class="prev" viewBox="0 0 37 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36 8.58579C36.2761 8.58579 36.5 8.36193 36.5 8.08579C36.5 7.80965 36.2761 7.58579 36 7.58579V8.58579ZM1 8.08579L0.644306 7.73439L0.29715 8.08579L0.644306 8.43719L1 8.08579ZM8.3557 1.35159C8.54977 1.15514 8.54784 0.838568 8.3514 0.644496C8.15495 0.450424 7.83838 0.452348 7.6443 0.648793L8.3557 1.35159ZM7.6443 15.5228C7.83838 15.7192 8.15495 15.7212 8.3514 15.5271C8.54784 15.333 8.54977 15.0164 8.3557 14.82L7.6443 15.5228ZM36 7.58579H1V8.58579H36V7.58579ZM1.35569 8.43719L8.3557 1.35159L7.6443 0.648793L0.644306 7.73439L1.35569 8.43719ZM0.644306 8.43719L7.6443 15.5228L8.3557 14.82L1.35569 7.73439L0.644306 8.43719Z"/>
+                        </svg>
+                        <svg class="next" viewBox="0 0 37 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7.5856C0.723858 7.5856 0.5 7.80946 0.5 8.0856C0.5 8.36174 0.723858 8.5856 1 8.5856V7.5856ZM36 8.0856L36.3557 8.437L36.7029 8.0856L36.3557 7.7342L36 8.0856ZM28.6443 14.8198C28.4502 15.0162 28.4522 15.3328 28.6486 15.5269C28.845 15.721 29.1616 15.719 29.3557 15.5226L28.6443 14.8198ZM29.3557 0.648602C29.1616 0.452156 28.845 0.450233 28.6486 0.644305C28.4522 0.838377 28.4502 1.15495 28.6443 1.3514L29.3557 0.648602ZM1 8.5856H36V7.5856H1V8.5856ZM35.6443 7.7342L28.6443 14.8198L29.3557 15.5226L36.3557 8.437L35.6443 7.7342ZM36.3557 7.7342L29.3557 0.648602L28.6443 1.3514L35.6443 8.437L36.3557 7.7342Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="banner banner--yandex">
         <div class="banner__bg">
@@ -543,10 +576,10 @@
     </div>
 </footer>
 
-<section class="modal-contacts">
-    <div class="modal-contacts__bg close"></div>
-    <div class="modal-contacts__content form">
-        <button type="button" class="modal-contacts__close close"></button>
+<section class="modal modal-contacts">
+    <div class="modal__bg close"></div>
+    <div class="modal__content modal-contacts__content form">
+        <button type="button" class="modal__close close"></button>
         <div class="modal-contacts__info-block">
             <h2 class="modal-contacts__title">
                 <span>Наши контакты</span>
@@ -592,7 +625,9 @@
 
 
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/swiper.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
