@@ -132,11 +132,9 @@ input[type=number] {
     font-size: 1.3333333333vw;
     -webkit-text-size-adjust: none;
   }
-
   body {
     -webkit-text-size-adjust: none;
   }
-
   .container {
     padding: 0 3rem;
     width: 100%;
@@ -186,7 +184,6 @@ input[type=number] {
     border-radius: 1.5rem;
     font-size: 3.2rem;
   }
-
   .red-link {
     font-family: "Proxima Nova Lt";
     font-weight: 600;
@@ -2649,7 +2646,6 @@ body {
     border-left: none;
     font-size: 2.8rem;
   }
-
   .news-medium {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2685,7 +2681,6 @@ body {
     font-size: 2.8rem;
     letter-spacing: 0;
   }
-
   .news-min {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -2747,7 +2742,6 @@ body {
   border: 3px solid #FFFFFF;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(12, 11, 11, 0.95)), to(rgba(12, 11, 11, 0.95))), rgba(255, 255, 255, 0.9);
   background: linear-gradient(0deg, rgba(12, 11, 11, 0.95), rgba(12, 11, 11, 0.95)), rgba(255, 255, 255, 0.9);
-  overflow-y: scroll;
 }
 .modal__close {
   position: absolute;
@@ -2975,7 +2969,6 @@ body {
     width: 6rem;
     height: 6rem;
   }
-
   .modal-contacts {
     padding: 0 3rem;
   }
@@ -3045,7 +3038,6 @@ body {
     margin-left: 0;
     margin-top: 8rem;
   }
-
   .modal-indicators__content {
     padding: 15rem 5rem 7rem 5rem;
   }
@@ -3201,7 +3193,7 @@ body {
     margin-top: -14rem;
   }
   .blog-page__start .info__title,
-.blog-page__start .info__desc {
+  .blog-page__start .info__desc {
     text-align: center;
   }
   .blog-page__start .button {

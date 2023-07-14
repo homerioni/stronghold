@@ -30,7 +30,7 @@ $(document).ready(function () {
     // modal-contacts
     $('.modal-contacts__content').css('display', 'flex').hide();
     $('.contacts-btn').click(function () {
-        $('body').addClass('lock');
+        $('body').width($(document).width()).addClass('lock');
         $('.modal-contacts').fadeIn();
         $('.modal-contacts__content.form').slideDown(300);
     });
@@ -39,19 +39,19 @@ $(document).ready(function () {
         $('.modal-contacts__content.complete').show();
     });
     $('.modal-contacts .close').click(function () {
-        $('body').removeClass('lock');
+        $('body').width('').removeClass('lock');
         $('.modal-contacts').hide();
         $('.modal-contacts__content').hide();
     });
 
     // modal-indicators
     $('.indicators-btn').click(function () {
-        $('body').addClass('lock');
+        $('body').width($(document).width()).addClass('lock');
         $('.modal-indicators').fadeIn();
         $('.modal-indicators__content').slideDown(300);
     });
     $('.modal-indicators .close').click(function () {
-        $('body').removeClass('lock');
+        $('body').width('').removeClass('lock');
         $('.modal-indicators').hide();
         $('.modal-indicators__content').hide();
     });
